@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admissions - Giants Secondary School Bukinda</title>
+  <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header class="site-header">
+    <div class="header-banner">
+      <h1>GIANTS SECONDARY SCHOOL BUKINDA</h1>
+      <p class="tagline">With God We Are Able</p>
+    </div>
+    <nav class="main-nav">
+      <button class="menu-toggle" aria-label="Toggle Navigation">&#9776; Menu</button>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="academics.html">Academics</a></li>
+        <li><a href="admissions.html" class="active">Admissions</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Banner -->
+  <section class="hero-section hero-small">
+    <div class="hero-content">
+      <h2>Join Our School Community</h2>
+      <p>Apply online or view admission guidelines for Giants Secondary School Bukinda.</p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="container">
+    
+    <!-- Guidelines & Requirements Grid -->
+    <div class="cards-grid" style="margin-bottom: 40px;">
+      
+      <!-- Admission Requirements -->
+      <div class="card">
+        <h3>Admission Requirements</h3>
+        <p><strong>Senior 1 (S.1) Entry:</strong></p>
+        <p>• PLE Result Slip / Mock Examination Results</p>
+        <p>• Recommendation letter from primary school</p>
+        <p>• Copy of Birth Certificate</p>
+        <p>• 2 Passport-size photographs</p>
+        <br>
+        <p><strong>Senior 5 (S.5) Entry:</strong></p>
+        <p>• UCE Result Slip / Identity Verification</p>
+        <p>• Recommendation letter from previous secondary school</p>
+        <p>• 2 Passport-size photographs</p>
+      </div>
+
+      <!-- School Uniform Code -->
+      <div class="card">
+        <h3>School Uniform Code</h3>
+        <p><strong>Ordinary Level (O-Level):</strong></p>
+        <p>• Short-sleeved white shirt</p>
+        <p>• Grey trousers</p>
+        <p>• Official school badge & tie</p>
+        <p>• Black leather shoes with white socks</p>
+        <br>
+        <p><strong>Advanced Level (A-Level):</strong></p>
+        <p>• Long-sleeved white shirt</p>
+        <p>• Green trousers</p>
+        <p>• Official school badge & tie</p>
+        <p>• Black leather shoes with white socks</p>
+      </div>
+
+    </div>
+
+    <!-- Online Admission Form Section -->
+    <div class="contact-form-card">
+      <h3>Online Application Form</h3>
+      <p style="margin-bottom: 20px; color: var(--text-muted);">Fill out the details below to submit an online admission request for your child.</p>
+      
+      <form action="#" method="post" class="contact-form">
+        <div class="cards-grid">
+          <div style="flex: 1; min-width: 250px;">
+            <div class="form-group">
+              <label for="student-name">Student's Full Name</label>
+              <input type="text" id="student-name" name="student_name" placeholder="Enter full name" required>
+            </div>
+
+            <div class="form-group">
+              <label for="gender">Gender</label>
+              <select id="gender" name="gender" style="width: 100%; padding: 12px; border: 1px solid #ced4da; border-radius: 6px;" required>
+                <option value="">Select Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="class-applying">Class Applying For</label>
+              <select id="class-applying" name="class_applying" style="width: 100%; padding: 12px; border: 1px solid #ced4da; border-radius: 6px;" required>
+                <option value="">Select Class</option>
+                <option value="S.1">Senior 1 (S.1)</option>
+                <option value="S.2">Senior 2 (S.2)</option>
+                <option value="S.3">Senior 3 (S.3)</option>
+                <option value="S.4">Senior 4 (S.4)</option>
+                <option value="S.5">Senior 5 (S.5)</option>
+                <option value="S.6">Senior 6 (S.6)</option>
+              </select>
+            </div>
+          </div>
+
+          <div style="flex: 1; min-width: 250px;">
+            <div class="form-group">
+              <label for="parent-name">Parent / Guardian Name</label>
+              <input type="text" id="parent-name" name="parent_name" placeholder="Enter parent/guardian name" required>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone_number" placeholder="e.g. +256 700 000000" required>
+            </div>
+
+            <div class="form-group">
+              <label for="previous-school">Previous School Attended</label>
+              <input type="text" id="previous-school" name="previous_school" placeholder="Enter previous school" required>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="additional-info">Additional Notes or Subject Choices (For A-Level)</label>
+          <textarea id="additional-info" name="additional_info" rows="4" placeholder="Mention preferred combination or any extra details"></textarea>
+        </div>
+
+        <button type="submit" class="btn-primary btn-submit">Submit Online Application</button>
+      </form>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h3>Giants Secondary School Bukinda</h3>
+        <p>With God We Are Able</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="academics.html">Academics</a></li>
+          <li><a href="admissions.html">Admissions</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Info</h4>
+        <p>Location: Bukinda, Uganda</p>
+        <p>Postal Address: P.O. Box 1021, Kabale, Uganda</p>
+        <p>Phone: +256 700 000 000</p>
+        <p>Email: info@giantsschool.sc.ug</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Giants Secondary School Bukinda. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../JS/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,336 @@
+﻿/* ==========================================
+   1. RESET & BASE STYLES
+   ========================================== */
+:root {
+  --primary-color: #0d4722;     /* Deep Forest Green */
+  --primary-hover: #083318;     /* Darker Green */
+  --accent-color: #d4af37;      /* Warm Gold Accent */
+  --text-dark: #2c3e50;         /* Primary Text */
+  --text-muted: #6c757d;        /* Secondary Text */
+  --bg-light: #f8f9fa;          /* Page Background */
+  --bg-white: #ffffff;          /* Card Background */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 6px 18px rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+/* ==========================================
+   2. HEADER & NAVIGATION
+   ========================================== */
+.site-header {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  box-shadow: var(--shadow-md);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-banner {
+  padding: 25px 20px 15px;
+  text-align: center;
+  border-bottom: 2px solid var(--accent-color);
+}
+
+.header-banner h1 {
+  font-size: 2rem;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.tagline {
+  font-style: italic;
+  font-size: 1.05rem;
+  color: var(--accent-color);
+  margin-top: 4px;
+}
+
+/* Navigation Bar */
+.main-nav {
+  background-color: #151515;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.main-nav a {
+  display: block;
+  color: #e0e0e0;
+  text-decoration: none;
+  padding: 16px 24px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: var(--transition);
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  border-bottom: 3px solid var(--accent-color);
+}
+
+/* ==========================================
+   3. HERO SECTION
+   ========================================== */
+.hero-section {
+  background: linear-gradient(rgba(13, 71, 34, 0.85), rgba(8, 51, 24, 0.9)), 
+              url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1200') center/cover no-repeat;
+  color: #ffffff;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero-small {
+  padding: 50px 20px;
+}
+
+.hero-content h2 {
+  font-size: 2.6rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.hero-content p {
+  font-size: 1.25rem;
+  max-width: 750px;
+  margin: 0 auto 30px;
+  opacity: 0.95;
+}
+
+/* Button Styling */
+.btn-primary {
+  display: inline-block;
+  background-color: var(--accent-color);
+  color: #111111;
+  padding: 14px 32px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+}
+
+.btn-primary:hover {
+  background-color: #ffffff;
+  color: var(--primary-color);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+/* ==========================================
+   4. CONTENT SECTIONS & CARDS
+   ========================================== */
+.intro-section {
+  text-align: center;
+  background-color: var(--bg-white);
+  border-bottom: 1px solid #e9ecef;
+}
+
+.intro-section h2 {
+  color: var(--primary-color);
+  font-size: 2.2rem;
+  margin-bottom: 18px;
+  position: relative;
+}
+
+.intro-text {
+  max-width: 850px;
+  margin: 0 auto;
+  font-size: 1.15rem;
+  color: var(--text-dark);
+}
+
+/* Responsive Cards Grid */
+.cards-grid, .contact-wrapper {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.card, .contact-info-card, .contact-form-card {
+  flex: 1;
+  min-width: 300px;
+  background: var(--bg-white);
+  padding: 35px 30px;
+  border-radius: 10px;
+  box-shadow: var(--shadow-sm);
+  border-top: 5px solid var(--primary-color);
+  transition: var(--transition);
+}
+
+.card:hover, .contact-info-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+}
+
+.card h3, .contact-info-card h3, .contact-form-card h3 {
+  color: var(--primary-color);
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+}
+
+/* ==========================================
+   5. FORMS & INPUTS
+   ========================================== */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.form-group input, 
+.form-group textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: var(--transition);
+}
+
+.form-group input:focus, 
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(13, 71, 34, 0.15);
+}
+
+.btn-submit {
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  padding: 14px;
+  font-size: 1rem;
+}
+
+/* ==========================================
+   6. FOOTER
+   ========================================== */
+.site-footer {
+  background-color: #111111;
+  color: #b0b0b0;
+  margin-top: 60px;
+  border-top: 4px solid var(--accent-color);
+}
+
+.footer-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 240px;
+}
+
+.footer-col h3, .footer-col h4 {
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+.footer-col ul {
+  list-style: none;
+}
+
+.footer-col a {
+  color: #b0b0b0;
+  text-decoration: none;
+  line-height: 2.2;
+  transition: var(--transition);
+}
+
+.footer-col a:hover {
+  color: var(--accent-color);
+  padding-left: 5px;
+}
+
+.footer-bottom {
+  background-color: #080808;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9rem;
+  border-top: 1px solid #222222;
+}
+
+/* ==========================================
+   7. MOBILE NAVIGATION & RESPONSIVENESS
+   ========================================== */
+.menu-toggle {
+  display: none;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  border: none;
+  padding: 14px 20px;
+  font-size: 1.05rem;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .main-nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .main-nav ul.nav-active {
+    display: flex;
+  }
+
+  .main-nav a {
+    border-top: 1px solid #222222;
+    padding: 14px 20px;
+  }
+
+  .hero-content h2 {
+    font-size: 2rem;
+  }
+
+  .header-banner h1 {
+    font-size: 1.5rem;
+  }
+}
