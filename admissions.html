@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admissions - Giants Secondary School Bukinda</title>
+  <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header class="site-header">
+    <div class="header-banner">
+      <h1>GIANTS SECONDARY SCHOOL BUKINDA</h1>
+      <p class="tagline">With God We Are Able</p>
+    </div>
+    <nav class="main-nav">
+      <button class="menu-toggle" aria-label="Toggle Navigation">&#9776; Menu</button>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="academics.html">Academics</a></li>
+        <li><a href="admissions.html" class="active">Admissions</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Banner -->
+  <section class="hero-section hero-small">
+    <div class="hero-content">
+      <h2>Join Our School Community</h2>
+      <p>Begin your journey toward academic excellence and strong leadership today.</p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="container">
+    <section class="intro-section" style="padding: 0 0 30px 0;">
+      <h2>Admissions Process</h2>
+      <p class="intro-text">
+        Giants Secondary School Bukinda welcomes applications from student candidates across Uganda and beyond. We admit students into Senior One (S.1), Senior Two (S.2), Senior Three (S.3), and Senior Five (S.5) based on academic merit, discipline, and commitment to learning.
+      </p>
+    </section>
+
+    <!-- Cards Grid -->
+    <div class="cards-grid">
+
+      <!-- O-Level Admission Requirements -->
+      <div class="card" style="border-top: 5px solid var(--primary-color);">
+        <h3>O-Level Admission (S.1 - S.3)</h3>
+        <p>Applicants seeking entry into lower secondary must present the following requirements during registration:</p>
+        <br>
+        <p>• 📄 Original Primary Leaving Examinations (PLE) Result Slip / Testimonial</p>
+        <p>• 📝 Recommendation Letter from the previous primary school</p>
+        <p>• 🖼️ Two recent passport-size photographs of the student</p>
+        <p>• 📋 Copy of the student's Birth Certificate or National Identification Number (NIN)</p>
+      </div>
+
+      <!-- A-Level Admission Requirements -->
+      <div class="card" style="border-top: 5px solid var(--primary-color);">
+        <h3>A-Level Admission (S.5)</h3>
+        <p>Candidates applying for Advanced Level must satisfy UNEB cut-off requirements for their desired subject combinations:</p>
+        <br>
+        <p>• 📄 Official Uganda Certificate of Education (UCE) Result Slip / Testimonial</p>
+        <p>• 📝 Letter of Conduct / Recommendation from the former school</p>
+        <p>• 🖼️ Two passport-size photos</p>
+        <p>• 📈 Verified subject combination selection form</p>
+      </div>
+
+      <!-- Online Application Form Section -->
+      <div class="card" style="border-top: 5px solid #28a745; flex: 1 1 100%; background-color: #fcfdfd;">
+        <h3>Online Student Registration Form</h3>
+        <p>Fill out the form below to apply online directly. Our admissions office will review your details and contact you.</p>
+        <br>
+
+        <form style="display: flex; flex-direction: column; gap: 15px; max-width: 700px; margin: 0 auto; text-align: left;">
+          <div>
+            <label style="font-weight: bold; display: block; margin-bottom: 5px;">Student's Full Name *</label>
+            <input type="text" placeholder="Enter student's full name" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+          </div>
+
+          <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+            <div style="flex: 1; min-width: 200px;">
+              <label style="font-weight: bold; display: block; margin-bottom: 5px;">Class Applied For *</label>
+              <select required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+                <option value="">Select Class</option>
+                <option value="S1">Senior One (S.1)</option>
+                <option value="S2">Senior Two (S.2)</option>
+                <option value="S3">Senior Three (S.3)</option>
+                <option value="S5">Senior Five (S.5)</option>
+              </select>
+            </div>
+            <div style="flex: 1; min-width: 200px;">
+              <label style="font-weight: bold; display: block; margin-bottom: 5px;">Gender *</label>
+              <select required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+                <option value="">Select Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+              </select>
+            </div>
+          </div>
+
+          <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+            <div style="flex: 1; min-width: 200px;">
+              <label style="font-weight: bold; display: block; margin-bottom: 5px;">Parent / Guardian Name *</label>
+              <input type="text" placeholder="Enter parent/guardian name" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+            </div>
+            <div style="flex: 1; min-width: 200px;">
+              <label style="font-weight: bold; display: block; margin-bottom: 5px;">Phone Number *</label>
+              <input type="tel" placeholder="+256 700 000 000" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+            </div>
+          </div>
+
+          <div>
+            <label style="font-weight: bold; display: block; margin-bottom: 5px;">Previous School & Aggregates / Grades</label>
+            <input type="text" placeholder="e.g., Bukinda Primary School (Agg. 8)" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+          </div>
+
+          <button type="submit" style="background-color: var(--primary-color, #004085); color: #fff; border: none; padding: 12px 20px; font-size: 1rem; font-weight: bold; border-radius: 4px; cursor: pointer; margin-top: 10px;">
+            Submit Application
+          </button>
+        </form>
+      </div>
+
+      <!-- How to Apply & Download Section -->
+      <div class="card" style="border-top: 5px solid var(--accent-color); flex: 1 1 100%;">
+        <h3>Offline Application Steps</h3>
+        <p>If you prefer to submit physical forms, follow these steps:</p>
+        <br>
+        <p><strong>1. Obtain Application Form:</strong> Download the printable PDF application form or collect a copy from the school bursar's office in Bukinda.</p>
+        <p><strong>2. Complete & Submit Documents:</strong> Attach all required academic documents, passport photos, and identification copies.</p>
+        <p><strong>3. Entrance Interview / Assessment:</strong> Candidate interviews and verification of documents are conducted at the school premises.</p>
+        <p><strong>4. Receive Admission Letter:</strong> Successful applicants will be issued an official admission letter alongside the requirements and fee structure.</p>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h3>Giants Secondary School Bukinda</h3>
+        <p>With God We Are Able</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="academics.html">Academics</a></li>
+          <li><a href="admissions.html">Admissions</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Info</h4>
+        <p>Location: Bukinda, Uganda</p>
+        <p>Postal Address: P.O. Box 1021, Kabale, Uganda</p>
+        <p>Phone: +256 700 000 000</p>
+        <p>Email: info@giantsschool.sc.ug</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Giants Secondary School Bukinda. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../JS/script.js"></script>
+</body>
+</html>
